@@ -13,7 +13,9 @@
  const cardPreview = document.getElementById('card-preview');
  const toggleCard = document.getElementById('toggle-card');
  const cssOutput = document.getElementById('css-output');
- const copyBtn = document.getElementById('copy-btn');
+ const htmlOutput = document.getElementById('html-output');
+ const copyBtnCss = document.getElementById('copy-btn-css');
+ const copyBtnHtml = document.getElementById('copy-btn-html');
  const themeBtns = document.querySelectorAll('.theme-btn');
 
 
@@ -44,6 +46,25 @@ border-radius: ${borderRadius.value}px;
     cssOutput.value = css;
 }
 
+function contentHtmlOutput() {
+    const htmlAnki = `
+  <!-- Frente -->
+  <div class="card">
+    {{frente}}
+  </div>
+  
+  <!-- Verso -->
+  <div class="card">
+    {{FrontSide}}
+  
+    <hr id="answer">
+  
+    {{Verso}}
+  </div>
+    `.trim();
+
+    htmlOutput.value = htmlAnki;
+}
 // Alternar entre frente e verso do cartão
 toggleCard.addEventListener('click', () => {
     cardPreview.classList.toggle('show-back');
@@ -53,12 +74,22 @@ toggleCard.addEventListener('click', () => {
 });
 
 // Copiar CSS para área de transferência
-copyBtn.addEventListener('click', () => {
+copyBtnCss.addEventListener('click', () => {
     cssOutput.select();
     document.execCommand('copy');
-    copyBtn.textContent = 'Copiado!';
+    copyBtnCss.textContent = 'Copiado!';
     setTimeout(() => {
-        copyBtn.textContent = 'Copiar CSS';
+        copyBtnCss.textContent = 'Copiar CSS';
+    }, 2000);
+});
+
+// Copiar HTML para área de transferência
+copyBtnHtml.addEventListener('click', () => {
+    htmlOutput.select();
+    document.execCommand('copy');
+    copyBtnHtml.textContent = 'Copiado!';
+    setTimeout(() => {
+        copyBtnHtml.textContent = 'Copiar HTML';
     }, 2000);
 });
 
@@ -134,3 +165,4 @@ themeBtns.forEach(btn => {
 
 // Inicializar
 updatePreview();
+contentHtmlOutput();

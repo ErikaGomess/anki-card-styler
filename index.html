@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anki Card Styler - Seu Personalizador de Cartões</title>
-    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="css/custom.css" />
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -13,12 +15,12 @@
             <p>Crie estilos personalizados para seus cartões Anki</p>
         </div>
     </header>
-    
+
     <div class="container">
         <div class="creator-container">
             <div class="controls-panel">
                 <h2>Configurações de Estilo</h2>
-                
+
                 <div class="control-group">
                     <label for="bg-color">Cor de Fundo</label>
                     <div class="color-picker">
@@ -26,7 +28,7 @@
                         <input type="text" id="bg-color-text" value="#ffffff">
                     </div>
                 </div>
-                
+
                 <div class="control-group">
                     <label for="text-color">Cor do Texto</label>
                     <div class="color-picker">
@@ -34,7 +36,7 @@
                         <input type="text" id="text-color-text" value="#333333">
                     </div>
                 </div>
-                
+
                 <div class="control-group">
                     <label for="font-family">Fonte</label>
                     <select id="font-family">
@@ -45,25 +47,25 @@
                         <option value="'Georgia', serif">Georgia</option>
                     </select>
                 </div>
-                
+
                 <div class="control-group">
                     <label for="font-size">Tamanho da Fonte (px)</label>
                     <input type="range" id="font-size" min="12" max="32" value="18">
                     <span id="font-size-value">18px</span>
                 </div>
-                
+
                 <div class="control-group">
                     <label for="card-padding">Espaçamento Interno</label>
                     <input type="range" id="card-padding" min="10" max="50" value="20">
                     <span id="card-padding-value">20px</span>
                 </div>
-                
+
                 <div class="control-group">
                     <label for="border-radius">Bordas Arredondadas</label>
                     <input type="range" id="border-radius" min="0" max="20" value="5">
                     <span id="border-radius-value">5px</span>
                 </div>
-                
+
                 <h3>Predefinições Rápidas</h3>
                 <div class="theme-presets">
                     <button class="theme-btn" data-theme="light">Claro</button>
@@ -72,7 +74,7 @@
                     <button class="theme-btn" data-theme="high-contrast">Alto Contraste</button>
                 </div>
             </div>
-            
+
             <div class="preview-container">
                 <div class="card-preview" id="card-preview">
                     <div class="card-front">
@@ -84,17 +86,23 @@
                         <p>Paris</p>
                     </div>
                 </div>
-                
+
                 <button class="toggle-card" id="toggle-card">Mostrar Verso</button>
-                
+
                 <div class="output-panel">
                     <h3>Seu CSS Gerado</h3>
                     <textarea class="css-output" id="css-output" readonly></textarea>
-                    <button class="copy-btn" id="copy-btn">Copiar CSS</button>
+                    <button class="copy-btn" id="copy-btn-css">Copiar CSS</button>
+
+                    <h3>Modelo HTML para o Anki</h3>
+                    <textarea class="css-output" id="html-output" rows="10" readonly></textarea>
+                    <button class="copy-btn" id="copy-btn-html">Copiar HTML</button>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
