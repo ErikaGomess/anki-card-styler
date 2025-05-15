@@ -1,6 +1,8 @@
 # 🃏 Anki Card Styler
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fb8c9f83-3a87-41cb-bfd3-f56aa76dbf79/deploy-status)](https://dazzling-blancmange-dc2667.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ada56f4b-72a3-4b84-a35e-ccaf6955fa5e/deploy-status)](https://dazzling-blancmange-dc2667.netlify.app/)
+![GitHub language count](https://img.shields.io/github/languages/count/ErikaGomess/anki-card-styler)
+![GitHub top language](https://img.shields.io/github/languages/top/ErikaGomess/anki-card-styler)
 
 **Anki Card Styler** é uma aplicação simples feita com **HTML**, **CSS** e **JavaScript**, criada para facilitar a personalização de cartões no Anki — a famosa ferramenta de memorização por repetição espaçada.
 
