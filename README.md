@@ -1,5 +1,7 @@
 # 🃏 Anki Card Styler
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fb8c9f83-3a87-41cb-bfd3-f56aa76dbf79/deploy-status)](https://dazzling-blancmange-dc2667.netlify.app/)
+
 **Anki Card Styler** é uma aplicação simples feita com **HTML**, **CSS** e **JavaScript**, criada para facilitar a personalização de cartões no Anki — a famosa ferramenta de memorização por repetição espaçada.
 
 🔗 Acesse a aplicação em: [https://dazzling-blancmange-dc2667.netlify.app/](https://dazzling-blancmange-dc2667.netlify.app/)
