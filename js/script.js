@@ -39,11 +39,6 @@ color: ${textColor.value};
 background-color: ${bgColor.value};
 padding: ${cardPadding.value}px;
 border-radius: ${borderRadius.value}px;
-}
-
-.nightMode .card {
-background-color: #222;
-color: #eee;
 }`;
     
     cssOutput.value = css;
