@@ -50,7 +50,7 @@ function contentHtmlOutput() {
     const htmlAnki = `
   <!-- Frente -->
   <div class="card">
-    {{frente}}
+    {{Frente}}
   </div>
   
   <!-- Verso -->
